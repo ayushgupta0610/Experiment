@@ -1,0 +1,30 @@
+{
+  "name": "experiment",
+  "version": "1.0.0",
+  "description": "an experimental decentralized project",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-server && npm run build-client",
+    "build-server": "babel src/server --out-dir ./dist",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushgupta0610/Experiment.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "Ayush Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ayushgupta0610/Experiment/issues"
+  },
+  "homepage": "https://github.com/ayushgupta0610/Experiment#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.17.1"
+  }
+}
