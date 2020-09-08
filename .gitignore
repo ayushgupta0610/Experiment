@@ -3,3 +3,8 @@ node_modules/
 
 #Project
 dist/
+
+#Files
+.env
+README.pdf
+README 2.md
